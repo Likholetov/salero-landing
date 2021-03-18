@@ -34,12 +34,10 @@ body {
 .salero-brand {
     font-family: "San Francisco Pro Display Bold";
     font-size: 28px;
+    padding-top: 40px;
 }
 
 .salero-navbar {
-    height: 120px;
-    display: flex;
-    align-items: center;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -49,15 +47,21 @@ body {
 }
 
 .navbar-nav {
-    align-items: center;
+    align-items: baseline;
 }
 
 #try-free-button {
     background-color: rgba(67, 133, 244, 0.1);
     padding: 20px 30px;
     margin-left: 30px;
+    margin-top: 30px;
     border-radius: 4px;
     color: #4385f4;
+}
+
+#try-free-button:hover {
+    background-color: #4385f4;
+    color: white;
 }
 
 /* first section */
@@ -80,8 +84,14 @@ body {
 }
 
 .hero-image-container-img {
+    height: 100%;
     width: 100%;
+    object-fit: contain;
     margin-bottom: 220px;
+}
+
+.salero-h-wrapper {
+    margin-bottom: 265px;
 }
 
 .salero-h {
@@ -99,4 +109,136 @@ body {
 .salero-form {
     margin: 0;
     padding: 20px 0 20px 0;
+    background: #edf2f9;
+    border-radius: 6px;
+    justify-content: space-between;
+}
+
+#email {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 16px 32px 16px 20px;
+    max-height: 52px;
+    margin-left: 12px;
+    border: 1px solid #e6ebf1;
+    border-radius: 4px;
+}
+
+.submit-button {
+    padding: 20px 10px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    max-height: 52px;
+    background: #4385f4;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.salero-form > .form-group {
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* hero-media */
+@media (min-width: 576px) and (max-width: 1199px) {
+    #email {
+        width: calc(100% - 24px);
+        margin-right: 12px;
+    }
+
+    .submit-button {
+        width: calc(100% - 24px);
+        margin-left: 12px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    #hero-image {
+        height: fit-content;
+        padding-bottom: 24px;
+    }
+    .hero-image-container {
+        height: fit-content;
+    }
+
+    .submit-button {
+        width: calc(100% - 24px);
+        margin-left: 12px;
+        margin-top: 20px;
+    }
+
+    .salero-form > .form-group {
+        margin-bottom: 0;
+    }
+
+    #email {
+        width: calc(100% - 24px);
+        margin-right: 12px;
+    }
+
+    .form-inline {
+        flex-direction: column;
+    }
+
+    .flex-fix {
+        flex: 0 1 auto;
+    }
+
+    .salero-h {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .salero-brand {
+        font-size: 20px;
+        padding-top: 16px;
+    }
+
+    .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: transparent;
+        border: none;
+        margin-top: 8px;
+    }
+
+    #try-free-button {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .hero-image-container {
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+
+    .salero-h-wrapper {
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+
+    .hero-image-container-img {
+        margin-bottom: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: 35px;
+    }
 }
