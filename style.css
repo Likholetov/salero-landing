@@ -398,8 +398,13 @@ body {
 }
 
 @media (max-width: 992px) {
-    .analyze-row-last {
+    .analyze-col.analyze-col-mid {
+        padding-bottom: 16px;
+    }
+
+    .analyze-row.analyze-row-last {
         margin-bottom: 0;
+        padding-bottom: 32px;
     }
 
     #analyze {
@@ -472,9 +477,148 @@ body {
     padding-bottom: 124px;
 }
 
+.why-title {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 16px;
+}
+
+.why-subtitle {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.why-item {
+    padding: 24px;
+    background: #f7faff;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.why-item.left {
+    margin-right: 10px;
+}
+
+.why-item.right {
+    margin-left: 10px;
+}
+
+.why-item > img {
+    margin-bottom: 20px;
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+}
+
+.why-item > h4 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1b3452;
+    margin-bottom: 8px;
+}
+
+.why-item > p {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;
+    color: #1b3452;
+    opacity: 0.8;
+}
+
+.why-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.why-height {
+    min-height: 220px;
+}
+
 @media (max-width: 992px) {
+    .why-margin-bottom {
+        margin-bottom: 16px;
+    }
+
+    .why-item.left {
+        margin-right: 0;
+    }
+
+    .why-col-margin-bottom {
+        margin-bottom: 16px;
+    }
+
+    .why-item.right {
+        margin-left: 0;
+    }
+
+    .why-item > img {
+        margin-bottom: 16px;
+    }
+
     #why-us {
         padding-top: 60px;
         padding-bottom: 60px;
+    }
+
+    .why-title {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 8px;
+    }
+
+    .why-subtitle {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .why-item {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-item > h4 {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #1b3452;
+        margin-bottom: 8px;
+    }
+
+    .why-item > p {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #1b3452;
+        opacity: 0.8;
     }
 }
