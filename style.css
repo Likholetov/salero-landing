@@ -274,11 +274,16 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 45px;
+    line-height: 26px;
 }
 
 /* how it works media*/
 
 @media (max-width: 992px) {
+    .how-col {
+        line-height: 24px;
+    }
+
     #how-it-works {
         padding-top: 60px;
         padding-bottom: 15px;
@@ -312,6 +317,7 @@ body {
     color: #1b3452;
     letter-spacing: 0.03em;
     margin-bottom: 160px;
+    line-height: 45px;
 }
 
 .analyze-row {
@@ -326,6 +332,7 @@ body {
     font-weight: 500;
     font-size: 24px;
     color: #1b3452;
+    line-height: 36px;
 }
 
 .analyze-row-subtitle {
@@ -335,6 +342,7 @@ body {
     font-size: 17px;
     color: #1b3452;
     opacity: 0.8;
+    line-height: 28px;
 }
 
 .analyze-col > img {
@@ -350,6 +358,11 @@ body {
     justify-content: flex-end;
 }
 
+.analyze-col.analyze-col-mid {
+    padding-bottom: 0;
+    justify-content: center;
+}
+
 .analyze-col > ul > li {
     font-family: Fira Sans;
     font-style: normal;
@@ -357,11 +370,12 @@ body {
     font-size: 17px;
     color: #1b3452;
     opacity: 0.8;
-    margin-bottom: 5px;
+    line-height: 28px;
 }
 
 .analyze-col > ul {
     padding-left: 20px;
+    margin-bottom: 0;
 }
 
 .analyze-col > ul > li::marker {
@@ -373,6 +387,16 @@ body {
     margin-bottom: 0;
 }
 
+.analyze-image-mid {
+    height: 390px;
+    object-fit: contain;
+}
+
+.analyze-image-last {
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 992px) {
     .analyze-row-last {
         margin-bottom: 0;
@@ -380,16 +404,19 @@ body {
 
     #analyze {
         padding-top: 32px;
-        padding-bottom: 32px;
+        padding-bottom: 0;
     }
 
     .analyze-title {
         font-size: 20px;
         margin-bottom: 30px;
+        line-height: 28px;
     }
 
     .analyze-row-title {
         font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.03em;
     }
 
     .analyze-col {
@@ -406,6 +433,7 @@ body {
     .analyze-row-subtitle {
         text-align: center;
         opacity: 1;
+        line-height: 24px;
     }
 
     .analyze-col > ul > li {
@@ -416,6 +444,7 @@ body {
         color: #1b3452;
         opacity: 0.8;
         text-align: center;
+        line-height: 24px;
     }
 
     .analyze-col > ul {
@@ -428,5 +457,24 @@ body {
     .analyze-col > ul > li::marker {
         color: #1b3452;
         font-size: 14px;
+    }
+
+    .analyze-image-mid {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* why-us */
+
+#why-us {
+    padding-top: 124px;
+    padding-bottom: 124px;
+}
+
+@media (max-width: 992px) {
+    #why-us {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
