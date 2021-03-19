@@ -25,6 +25,12 @@ body {
 .navbar-nav > .nav-item > a.salero-a {
     padding-right: 30px;
     padding-left: 30px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    color: #1b3452;
 }
 
 .navbar-nav > .nav-item > a.salero-a:hover {
@@ -60,7 +66,7 @@ body {
 }
 
 #try-free-button:hover {
-    background-color: #4385f4;
+    background-color: #1669f8;
     color: white;
 }
 
@@ -104,6 +110,7 @@ body {
     font-weight: 300;
     font-size: 17px;
     margin-bottom: 24px;
+    line-height: 28px;
 }
 
 .salero-form {
@@ -124,6 +131,7 @@ body {
     margin-left: 12px;
     border: 1px solid #e6ebf1;
     border-radius: 4px;
+    max-width: 200px;
 }
 
 .submit-button {
@@ -137,6 +145,12 @@ body {
     background: #4385f4;
     border-radius: 4px;
     margin-right: 12px;
+    border: none;
+    min-width: 200px;
+}
+
+.submit-button:hover {
+    background: #1669f8;
 }
 
 .salero-form > .form-group {
@@ -149,6 +163,7 @@ body {
     #email {
         width: calc(100% - 24px);
         margin-right: 12px;
+        max-width: inherit;
     }
 
     .submit-button {
@@ -156,9 +171,17 @@ body {
         margin-left: 12px;
         margin-top: 20px;
     }
+
+    .analyze-image-mid {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 992px) {
+    .salero-a {
+        margin-bottom: 16px;
+    }
+
     #hero-image {
         height: fit-content;
         padding-bottom: 24px;
@@ -180,6 +203,7 @@ body {
     #email {
         width: calc(100% - 24px);
         margin-right: 12px;
+        max-width: inherit;
     }
 
     .form-inline {
@@ -620,5 +644,592 @@ body {
         text-align: center;
         color: #1b3452;
         opacity: 0.8;
+    }
+}
+
+#cost {
+    padding-top: 150px;
+    padding-bottom: 120px;
+    background: rgba(67, 133, 244, 0.02);
+}
+
+.cost-title {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #1b3452;
+    margin-bottom: 40px;
+}
+
+.cost-row {
+    justify-content: center;
+}
+
+.cost-content {
+    padding: 40px;
+    background: #ffffff;
+}
+
+.cost-content > div > div > h4 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1b3452;
+}
+
+.cost-content > div > div > p {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;
+    color: #1b3452;
+    white-space: nowrap;
+}
+
+.cost-price {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 61px;
+    color: #4385f4;
+}
+
+.cost-price-col {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.cost-month {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1b3452;
+    opacity: 0.8;
+}
+
+.cost-user-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    background: rgba(67, 133, 244, 0.1);
+    border-radius: 6px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #4385f4;
+    margin: 0 0 16px 0;
+}
+
+.cost-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cost-list > li {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;
+    color: #1b3452;
+    opacity: 0.8;
+    white-space: nowrap;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.cost-list > li:before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-image: url("./images/Vector.png");
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    background-position: center;
+}
+
+.cost-flex-end-desktop {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#buy-button {
+    padding: 20px 10px;
+    width: calc(100% - 10px);
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    color: #4385f4;
+    background-color: white;
+    border: 1px solid #4385f4;
+    border-radius: 4px;
+}
+
+#buy-button:hover {
+    background-color: #1669f8;
+    color: white;
+}
+
+#try-button {
+    padding: 20px 10px;
+    width: calc(100% - 10px);
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    color: #ffffff;
+    background: #4385f4;
+    border: 1px solid #4385f4;
+    border-radius: 4px;
+}
+
+#try-button:hover {
+    background-color: #1669f8;
+}
+
+.cost-top-ball {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(138.29deg, rgba(255, 255, 255, 0.38) 10.27%, rgba(255, 255, 255, 0) 89.62%), #4385f4;
+    border-radius: 72px;
+    left: 151px;
+    top: 4408px;
+}
+
+.cost-second-ball {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 146px;
+    border-radius: 40px;
+    top: 4530px;
+    background: linear-gradient(138.29deg, rgba(255, 255, 255, 0.38) 10.27%, rgba(255, 255, 255, 0) 89.62%), #4385f4;
+}
+
+.cost-bottom-ball {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 798px;
+    top: 4970px;
+    border-radius: 21px;
+    background: linear-gradient(138.29deg, rgba(255, 255, 255, 0.38) 10.27%, rgba(255, 255, 255, 0) 89.62%), #4385f4;
+}
+
+.cost-right-box {
+    position: absolute;
+    width: 92px;
+    height: 209px;
+    right: 215px;
+    top: 4620px;
+    background: rgba(67, 133, 244, 0.2);
+    box-shadow: 0px 12px 16px rgba(88, 149, 246, 0.15);
+    backdrop-filter: blur(24px);
+    border-radius: 12px;
+}
+
+.cost-left-box {
+    position: absolute;
+    width: 143px;
+    height: 143px;
+    left: 217px;
+    top: 4821px;
+    background: rgba(67, 133, 244, 0.2);
+    box-shadow: 0px 12px 16px rgba(88, 149, 246, 0.15);
+    backdrop-filter: blur(24px);
+    border-radius: 12px;
+}
+
+@media (max-width: 992px) {
+    .cost-top-ball {
+        display: none;
+    }
+
+    .cost-second-ball {
+        display: none;
+    }
+
+    .cost-bottom-ball {
+        display: none;
+    }
+
+    .cost-right-box {
+        display: none;
+    }
+
+    .cost-left-box {
+        display: none;
+    }
+
+    #buy-button {
+        padding: 20px 10px;
+        width: 100%;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 12px;
+        color: #4385f4;
+        margin-bottom: 16px;
+        margin-top: 8px;
+    }
+
+    #try-button {
+        padding: 20px 10px;
+        width: 100%;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 12px;
+    }
+
+    .cost-flex-end-desktop {
+        display: block;
+    }
+
+    .cost-list {
+        margin-bottom: 0;
+    }
+
+    .cost-list > li {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: #1b3452;
+        opacity: 0.8;
+        white-space: normal;
+        margin-bottom: 8px;
+    }
+
+    #cost {
+        padding-top: 32px;
+        padding-bottom: 30px;
+    }
+
+    .cost-title {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #1b3452;
+    }
+
+    .cost-content {
+        padding: 16px;
+        background: #ffffff;
+        box-shadow: 0px 8px 44px -8px rgba(27, 52, 82, 0.08);
+        border-radius: 8px;
+    }
+
+    .cost-content > div > div > h4 {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b3452;
+    }
+
+    .cost-content > div > div > p {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: #1b3452;
+        white-space: normal;
+        margin-bottom: 12px;
+    }
+
+    .cost-price {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        color: #4385f4;
+    }
+
+    .cost-price-col {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        margin: 0 0 16px 0;
+    }
+
+    .cost-month {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: #1b3452;
+        opacity: 0.8;
+    }
+}
+
+#try {
+    padding-top: 90px;
+    padding-bottom: 140px;
+    background-image: url("./images/shutterstock_1092993509.jpg");
+    background-color: rgba(67, 133, 244, 0.02);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.try-title {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    color: #1b3452;
+    margin-bottom: 12px;
+}
+
+.try-subtitle {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: #1b3452;
+    margin-bottom: 30px;
+}
+
+.try-row {
+    display: flex;
+    justify-content: center;
+}
+
+.try-content {
+    padding: 20px;
+    background: #edf2f9;
+    border-radius: 6px;
+}
+
+.try-form-group {
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+
+.try-form-btn {
+    padding: 0 0 0 10px;
+}
+
+#emailBottom {
+    padding: 16px 20px 16px 32px;
+    background: #ffffff;
+    border: 1px solid #e6ebf1;
+}
+
+#emailBottom::placeholder {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: #80838b;
+}
+
+#try-submit-button {
+    background: #4385f4;
+    border-radius: 4px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    padding: 20px 10px 20px 10px;
+    border: none;
+}
+
+#try-submit-button:hover {
+    background: #1669f8;
+}
+
+@media (max-width: 992px) {
+    #emailBottom::placeholder {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        color: #80838b;
+    }
+
+    #emailBottom {
+        margin-bottom: 12px;
+    }
+
+    .try-form-group {
+        padding-right: 0;
+    }
+
+    .try-form-btn {
+        padding: 0;
+    }
+
+    #try {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .try-title {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #1b3452;
+        margin-bottom: 8px;
+    }
+
+    .try-subtitle {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #1b3452;
+        opacity: 0.8;
+        margin-bottom: 16px;
+    }
+}
+
+#footer {
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    opacity: 0.6;
+    padding-right: 0;
+}
+
+.footer-menu > a {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    color: #1b3452;
+    text-decoration: none;
+}
+
+.footer-menu > a:hover {
+    color: #4385f4;
+}
+
+.salero-brand-bot {
+    font-family: "San Francisco Pro Display Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #1b3452;
+}
+
+.salero-brand-bot:hover {
+    color: #1b3452;
+}
+
+.footer-row {
+    margin-bottom: 30px;
+}
+
+.footer-about-col {
+    padding: 0;
+}
+
+.footer-about-text {
+    text-align: right;
+}
+
+.footer-about {
+    margin-bottom: 0;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1b3452;
+    opacity: 0.4;
+}
+
+@media (max-width: 992px) {
+    .footer-about {
+        text-align: center;
+    }
+
+    .footer-about-first {
+        margin-bottom: 6px;
+    }
+
+    .footer-row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .only-desktop {
+        display: none;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    #footer {
+        padding-top: 40px;
+        padding-bottom: 24px;
+    }
+
+    .footer-menu > a {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 12px;
+        margin-bottom: 24px;
+        text-align: center;
     }
 }
