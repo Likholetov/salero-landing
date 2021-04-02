@@ -74,9 +74,7 @@ body {
 
 #hero-image {
     height: 900px;
-    background-image: url("./images/shutterstock_1092993509.jpg");
-    background-color: #4385f4;
-    background-blend-mode: screen;
+    background-image: url("./images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -178,6 +176,10 @@ body {
 }
 
 @media (max-width: 992px) {
+    #hero-image {
+        background-image: url("./images/bg-mobile.jpg");
+    }
+
     .salero-a {
         margin-bottom: 16px;
     }
@@ -999,9 +1001,7 @@ body {
 #try {
     padding-top: 90px;
     padding-bottom: 140px;
-    background-image: url("./images/shutterstock_1092993509.jpg");
-    background-color: #4385f4;
-    background-blend-mode: screen;
+    background-image: url("./images/bg-try.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
